@@ -13,7 +13,7 @@ class AuthorForm ( FlaskForm ):
 def edit_author (id):
     a = get_author(id)
     f = AuthorForm(id=a.id , name=a.name)
-    return render_template ("edit - author.html",author =a, form=f)
+    return render_template("edit-author.html",author =a, form=f)
 
 @app.route("/")
 def home():

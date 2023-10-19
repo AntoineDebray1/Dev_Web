@@ -12,3 +12,5 @@ def mkpath (p):
 
 app.config['SQLALCHEMY_DATABASE_URI'] = ('sqlite:///'+mkpath('../app.db'))
 db = SQLAlchemy(app)
+
+app.config["SECRET_KEY"]="e28895be-0f01-42ba-a1da-875624610b39"

@@ -41,3 +41,6 @@ class Book(db.Model):
 
 def get_sample():
     return Book.query.limit(10).all()
+
+def get_author(idBook):
+    return Book.query(Book.author_id).filter_by(id=idBook)

@@ -1,4 +1,4 @@
-from .app import app
+from .app import app,db
 from flask import render_template,url_for , redirect
 from .models import get_author, get_sample,Author
 from flask_wtf import FlaskForm
